@@ -13,4 +13,3 @@ set(CMAKE_CXX_FLAGS_RELEASE "/O2 /Zi /DNDEBUG")
 set(CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} /DEBUG /OPT:REF /OPT:ICF")
 
 add_subdirectory(apps/app1)
-add_subdirectory(apps/app2)

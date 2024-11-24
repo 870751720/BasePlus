@@ -10,7 +10,7 @@ int main() {
     cout << "turn da: " << text << endl;  // 输出: HELLO WORLD
 
     // 示例2：字符串修剪
-    string text2 = "   helloxy ccc rrrrrrrrrrrrrrr ";
+    string text2 = "   ========= ";
     boost::trim(text2);
     cout << "turn xiao: [" << text2 << "]" << endl;  // 输出: [hello]
 
