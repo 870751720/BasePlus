@@ -1,12 +1,25 @@
 {
     "cmake.configureSettings": {
-        "CMAKE_TOOLCHAIN_FILE": "C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake"
+        "CMAKE_TOOLCHAIN_FILE": "${env:PROGRAMFILES}/vcpkg/scripts/buildsystems/vcpkg.cmake"
     },
     "cmake.generator": "Visual Studio 17 2022",
-    "cmake.buildDirectory": "${workspaceFolder}/build",
-    "files.exclude": {
-        "build/": true,
-        ".gitignore": true,
-        ".vscode": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+    "cmake.defaultVariants": {
+        "buildType": {
+            "default": "debug",
+            "description": "生成类型",
+            "choices": {
+                "debug": {
+                    "short": "Debug",
+                    "long": "启用调试信息的调试构建",
+                    "buildType": "Debug"
+                },
+                "release": {
+                    "short": "Release",
+                    "long": "优化的发布构建",
+                    "buildType": "Release"
+                }
+            }
+        }
     }
 }

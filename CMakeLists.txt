@@ -1,15 +1,16 @@
 cmake_minimum_required(VERSION 3.15)
-project(boost_test)
+project(EasyCPlusPlus)
 
-# 设置 C++ 标准
+# 设置C++标准
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 查找 Boost 包
-find_package(Boost REQUIRED)
+# Debug模式下不开优化，Release模式开启最高优化
+set(CMAKE_CXX_FLAGS_DEBUG "/Od /Zi")
+set(CMAKE_CXX_FLAGS_RELEASE "/O2 /Zi /DNDEBUG")
 
-# 添加可执行文件
-add_executable(boost_test test.cpp)
+# 在主CMakeLists.txt中添加
+set(CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS_RELEASE} /DEBUG /OPT:REF /OPT:ICF")
 
-# 链接 Boost 库
-target_link_libraries(boost_test PRIVATE Boost::boost)
+add_subdirectory(apps/app1)
+add_subdirectory(apps/app2)
