@@ -1,4 +1,11 @@
 {
+    "files.exclude": {
+        "**/build/": true,
+        ".gitignore": true,
+    },
+    "files.associations": {
+        "ostream": "cpp"
+    },
     "cmake.configureSettings": {
         "CMAKE_TOOLCHAIN_FILE": "${env:PROGRAMFILES}/vcpkg/scripts/buildsystems/vcpkg.cmake"
     },
