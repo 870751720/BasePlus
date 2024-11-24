@@ -17,13 +17,14 @@
 4. 模块功能拆分,尽可能使用我的工程结构,来为我分配代码
     EasyCPlusPlus/
     ├── apps/                             # 应用程序目录
-    │   └── app1/                         # 应用1
+    │   └── app1/                         # 主应用
     │       ├── src/                      # 源代码目录
     │       │   └── main.cpp              # 主程序
     │       └── CMakeLists.txt            # app1的CMake配置
     │
     ├── tools/                            # 工具目录
-    ├── lib/                              # 第三方库
+    ├── third_party/                      # 第三方依赖
+    │   ├── lib/
     ├── CMakeLists.txt                    # 主CMake配置文件
     ├── src/                              # 代码目录
     │   ├── common/                       # 公共代码
