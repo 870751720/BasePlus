@@ -1,0 +1,12 @@
+{
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    },
+    "cmake.generator": "Visual Studio 17 2022",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "files.exclude": {
+        "build/": true,
+        ".gitignore": true,
+        ".vscode": true,
+    }
+}
