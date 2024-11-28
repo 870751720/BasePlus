@@ -1,0 +1,3 @@
+vcpkg install opencv:x64-windows
+vcpkg install qt:x64-windows
+vcpkg install boost:x64-windows
