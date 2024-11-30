@@ -107,6 +107,7 @@
         "complex": "cpp",
         "cstdarg": "cpp",
         "strstream": "cpp",
-        "typeindex": "cpp"
+        "typeindex": "cpp",
+        "qapplication": "cpp"
     }
 }
