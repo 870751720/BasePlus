@@ -20,6 +20,9 @@ vkpkg\bootstrap-vcpkg.bat
 vkpkg\vcpkg integrate install
 最后调用tools/initEnv.bat 输入vcpkg的目录名(exe的上一层)
 
-4 使用
+4 安装依赖库
+对着Requirements.txt的库安装就好
+
+5 使用
 在CMakeTool上,配置里面可以切debug和release
 在项目大纲上对具体的app右键设置为启动调试目标可以切换运行
