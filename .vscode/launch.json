@@ -9,7 +9,7 @@
             "args": ["--runCode"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
-            "console": "externalTerminal"
+            "console": "internalConsole"
         }
     ]
 }

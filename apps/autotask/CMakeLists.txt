@@ -3,9 +3,7 @@ set(APP_NAME autotask)
 find_package(OpenCV REQUIRED)
 find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
 find_package(Boost REQUIRED COMPONENTS program_options)
-# 带console窗口
-#add_executable(${APP_NAME} src/main.cpp)
-add_executable(${APP_NAME} WIN32 src/main.cpp) 
+add_executable(${APP_NAME} WIN32 src/main.cpp)
 target_link_libraries(${APP_NAME} PRIVATE ${OpenCV_LIBS} Qt6::Core Qt6::Gui Qt6::Widgets Boost::program_options)
 add_custom_command(TARGET ${APP_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
