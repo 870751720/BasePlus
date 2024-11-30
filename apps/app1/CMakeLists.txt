@@ -1,4 +1,14 @@
-find_package(Boost REQUIRED)
+set(APP_NAME app1)
 
-add_executable(app1 src/main.cpp)
-target_link_libraries(app1 PRIVATE Boost::boost)
+find_package(OpenCV REQUIRED)
+find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
+find_package(Boost REQUIRED COMPONENTS program_options)
+# 带console窗口
+#add_executable(${APP_NAME} src/main.cpp)
+add_executable(${APP_NAME} WIN32 src/main.cpp) 
+target_link_libraries(${APP_NAME} PRIVATE ${OpenCV_LIBS} Qt6::Core Qt6::Gui Qt6::Widgets Boost::program_options)
+add_custom_command(TARGET ${APP_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "$<IF:$<CONFIG:Debug>,${Qt6_DIR}/../../debug/Qt6/plugins/platforms,${Qt6_DIR}/../../Qt6/plugins/platforms>"
+    "$<TARGET_FILE_DIR:${APP_NAME}>/"
+)
