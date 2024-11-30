@@ -1,6 +1,7 @@
 # EasyCPlusPlus
 
 # 安装
+
 1 确保安装了推荐插件cmaketools
 
 2 
@@ -11,6 +12,7 @@
 点击"更改系统区域设置"
 勾选"使用 Unicode UTF-8 提供全球语言支持"
 重启系统
+
 3 安装vcpkg
 git clone git@github.com:microsoft/vcpkg.git
 

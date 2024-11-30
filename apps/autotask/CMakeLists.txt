@@ -1,4 +1,4 @@
-set(APP_NAME app1)
+set(APP_NAME autotask)
 
 find_package(OpenCV REQUIRED)
 find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
