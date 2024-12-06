@@ -1,3 +1,0 @@
-vcpkg install opencv:x64-windows
-vcpkg install qtbase:x64-windows
-vcpkg install boost-program-options
