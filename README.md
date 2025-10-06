@@ -1,15 +1,11 @@
-# °²×°vcpkg
-Èç¹ûÃ»ÓĞ°²×°vcpkg, ¿ÉÒÔÈ¥ https://github.com/microsoft/vcpkg ÏÂÔØ
-vcpkg\bootstrap-vcpkg.bat Ö´ĞĞ
-vcpkg\vcpkg integrate install ¹ØÁªµ½vs,¹ÜÀíÔ±È¨ÏŞÖ´ĞĞ
-
-# ²é¿´ boost-property-tree µÄËùÓĞ¿ÉÓÃ°æ±¾
-vcpkg search boost-property-tree
-
-# Ìí¼ÓÖ¸¶¨°æ±¾µÄ boost-property-tree
-vcpkg add port boost-property-tree
-
-# ·­Ç½cmdÍøËÙ»¹Âı
-cmdÖ´ĞĞ, µ¥´ÎÉúĞ§
-set http_proxy=http://127.0.0.1:7890
-set https_proxy=http://127.0.0.1:7890
+# å®‰è£…vcpkg
+vs installer çš„å•ä¸ªç»„ä»¶çš„ æœ‰vcpkgåŒ…ç®¡ç†å™¨
+ç®¡ç†å‘˜æ¨¡å¼ä¸‹ cd C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg
+æ‰§è¡Œ vcpkg integrate install
+# ä»é›¶å¼€å§‹ä¸€ä¸ªæ–°å·¥ç¨‹
+1 åˆ›å»ºä¸€ä¸ªç©ºç™½è§£å†³æ–¹æ¡ˆ
+2 æ·»åŠ ä¸€ä¸ªæ–°å»ºé¡¹ç›® æ§åˆ¶å°åº”ç”¨ å³å¯
+3 é¡¹ç›®æ–°å»º Include Sourceæ–‡ä»¶å¤¹
+4 å±æ€§é¡µçš„vcpkgçš„ Use Vcpkg Manifest è®¾ç½®ä¸º æ˜¯
+5 åœ¨é¡¹ç›®æ–‡ä»¶å¤¹æ‰§è¡Œ "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\vcpkg.exe" new --application
+6 åç»­æ·»åŠ æ–°ä¾èµ–å°±æ¯”å¦‚ "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\vcpkg.exe" add port boost-property-tree
