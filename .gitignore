@@ -47,7 +47,6 @@ obj/
 
 # 文档生成产物
 docs/_build/
-docs/*.html
 
 # 测试相关
 TestResults/
