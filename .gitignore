@@ -31,12 +31,6 @@ x86/
 bin/
 obj/
 
-# vcpkg相关（保留配置文件，忽略安装的包）
-vcpkg/
-!vcpkg.json
-!vcpkg-configuration.json
-vcpkg_installed/
-
 # 日志和临时文件
 *.log
 *.tmp
