@@ -55,3 +55,6 @@ TestResults/
 # 操作系统相关
 .DS_Store
 Thumbs.db
+
+# vcpkg
+vcpkg_installed/
