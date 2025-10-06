@@ -1,1 +1,64 @@
-.vs
+# 编译产物
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.manifest
+*.rsp
+*.pch
+*.idb
+*.ipdb
+*.iobj
+*.log
+
+# Visual Studio项目文件相关
+*.sln.docstates
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+.vs/
+ipch/
+Debug/
+Release/
+x64/
+x86/
+bin/
+obj/
+
+# vcpkg相关（保留配置文件，忽略安装的包）
+vcpkg/
+!vcpkg.json
+!vcpkg-configuration.json
+vcpkg_installed/
+
+# 日志和临时文件
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# 配置文件和环境文件
+*.ini
+*.conf
+*.env
+!default.conf
+!default.ini
+
+# 文档生成产物
+docs/_build/
+docs/*.html
+
+# 测试相关
+TestResults/
+*.coverage
+
+# 操作系统相关
+.DS_Store
+Thumbs.db
